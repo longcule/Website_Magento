@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_item>
+      <title>BZOTech - Footer 1 Content</title>
+      <identifier>footer-1-content</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="footer-top pt-desktop-70 pb-desktop-44 pt-mobile-30"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-4 col-sm-6 col-6"&gt;
+                &lt;div class="ft-block"&gt;
+                    &lt;div class="ft-title"&gt;Contact Us&lt;/div&gt;
+
+                    &lt;div class="ft-content"&gt;
+                        &lt;div class="text-address"&gt;
+                            Address: 139 Brook Drive South Richmond Hill, New York 1067 USA
+                        &lt;/div&gt;
+
+                        &lt;div class="text-email"&gt;
+                            Email: &lt;a href="mailto:bzopets@support.com"&gt;bzopets@support.com&lt;/a&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="call-order"&gt;
+                            &lt;div class="call-title"&gt;Call To Order&lt;/div&gt;
+                            &lt;div class="call-phone"&gt;&lt;a href="tel:(+084) 859 481 3614"&gt;(+084) 859 481 3614&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-lg-2 col-sm-6 col-6"&gt;
+                &lt;div class="ft-block"&gt;
+                    &lt;div class="ft-title"&gt;Quick Links&lt;/div&gt;
+
+                    &lt;div class="ft-content"&gt;
+                        &lt;ul class="links-footer"&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}about-us"&gt;About us&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}contact"&gt;Contact us&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}shop.html"&gt;Shop&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}shop.html"&gt;Products&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}blog"&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-lg-2 col-sm-6 col-6"&gt;
+                &lt;div class="ft-block"&gt;
+                    &lt;div class="ft-title"&gt;Userful Links&lt;/div&gt;
+
+                    &lt;div class="ft-content"&gt;
+                        &lt;ul class="links-footer"&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}best-sellers"&gt;Special Offers&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}privacy-policy-cookie-restriction-mode"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}enable-cookies"&gt;Teams of Use&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}about-us"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="{{store url=""}}faqs"&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-lg-4 col-sm-6 col-6"&gt;
+                &lt;div class="ft-block ft-block-news"&gt;
+                    &lt;div class="ft-title"&gt;Our Newsletter&lt;/div&gt;
+
+                    &lt;div class="ft-content"&gt;
+                        &lt;div class="text-description"&gt;
+                            Subscribe to the weekly newsletter for all the latest
+                            updates &amp; get a 10% off bill offers.
+                        &lt;/div&gt;
+
+                        {{block class="Magento\Newsletter\Block\Subscribe" template="Magento_Newsletter::subscribe-footer.phtml"}}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="ft-block ft-block-social"&gt;
+                    {{block class="Magento\\Cms\\Block\\Block" block_id="block-social"}}
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Block Social</title>
+      <identifier>block-social</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="follow-header"&gt;
+    &lt;div class="title"&gt;Follow Us:&lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/BZOTech"&gt;&lt;img src="{{media url=wysiwyg/social/social-1.png}}" alt="Social" width="25" height="25" /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://twitter.com/BzoTech"&gt;&lt;img src="{{media url=wysiwyg/social/social-2.png}}" alt="Social" width="25" height="25" /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://www.linkedin.com/in/bzotech/"&gt;&lt;img src="{{media url=wysiwyg/social/social-3.png}}" alt="Social" width="25" height="25" /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://www.pinterest.com/Bzo_Tech"&gt;&lt;img src="{{media url=wysiwyg/social/social-4.png}}" alt="Social" width="25" height="25" /&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Detail Sidebar</title>
+      <identifier>detail-sidebar</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="sidebar-livechat"&gt;
+    &lt;div class="image-livechat"&gt;
+        &lt;img src="{{media url=wysiwyg/detail/image-livechat.jpg}}" alt="Live Chat" width="90" height="90" /&gt;
+    &lt;/div&gt;
+
+    &lt;div class="info-livechat"&gt;
+        &lt;div class="live-chat-top"&gt;Have A Question? Ask A Specialist&lt;/div&gt;
+        &lt;div class="live-chat-link"&gt;&lt;a href="#"&gt;Live Chat&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="service-sidebar"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;img src="{{media url=wysiwyg/header/icon-1.png}}" alt="Service" width="26" height="33" /&gt;&lt;/span&gt;Free Same-Day Delivery&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;img src="{{media url=wysiwyg/header/icon-2.png}}" alt="Service" width="24" height="33" /&gt;&lt;/span&gt;Friendly Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;img src="{{media url=wysiwyg/header/icon-3.png}}" alt="Service" width="23" height="33" /&gt;&lt;/span&gt;100% Secure Payment&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;img src="{{media url=wysiwyg/header/icon-4.png}}" alt="Service" width="22" height="33" /&gt;&lt;/span&gt;24/7 Help Center&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;img src="{{media url=wysiwyg/header/icon-5.png}}" alt="Service" width="22" height="33" /&gt;&lt;/span&gt;30 Day Return&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="banner-image"&gt;
+    &lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/detail/banner-sidebar-detail.jpg}}" alt="Live Chat" width="346" height="512" /&gt;&lt;/a&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Detail Shipping</title>
+      <identifier>detail-shipping</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul class="shipping-detail"&gt;
+&lt;li&gt;FREE 1-3 day shipping over $49&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Google Map</title>
+      <identifier>google-map</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="google-map"&gt;
+    &lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.620368427774!2d-122.08643538441451!3d37.42244704012424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb5e784e1a79%3A0xe33e33f2fc7227f7!2s1600%20Amphitheatre%20Pkwy%2C%20Mountain%20View%2C%20CA%2094043!5e0!3m2!1svi!2sus!4v1648192213758!5m2!1svi!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Contact Info</title>
+      <identifier>contact-info</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="contact-col-info"&gt;
+    &lt;div class="title google-element-font"&gt;Get In Touch&lt;/div&gt;
+    &lt;div class="contact-des"&gt;Parking is only available on weekends. Feel free to buzz 101 at the intercom!&lt;/div&gt;
+
+    &lt;ul class="contact-detail"&gt;
+        &lt;li class="address"&gt;
+            &lt;div class="info-title"&gt;Address&lt;/div&gt;
+            &lt;div class="info-des"&gt;139 Brook Drive South Richmond Hill, New York 1067 USA&lt;/div&gt;
+        &lt;/li&gt;
+
+        &lt;li class="phone"&gt;
+            &lt;div class="info-title"&gt;Phone&lt;/div&gt;
+            &lt;div class="info-des"&gt;
+                &lt;a href="tel:(+084) 859 481 3614"&gt;(+084) 859 481 3614&lt;/a&gt;&lt;br&gt;
+                &lt;a href="tel:(+084) 859 481 3614"&gt;(+084) 859 481 3614&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+
+        &lt;li class="mail"&gt;
+            &lt;div class="info-title"&gt;Mail&lt;/div&gt;
+            &lt;div class="info-des"&gt;
+                &lt;a href="mailto:bzopets@support.com"&gt;bzopets@support.com&lt;/a&gt;
+                &lt;a href="mailto:bzopets@support.com"&gt;bzopets@support.com&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+
+        &lt;li class="time"&gt;
+            &lt;div class="info-title"&gt;Openning Time&lt;/div&gt;
+            &lt;div class="info-des"&gt;
+                Monday to Saturday: &lt;span&gt;9:00 AM-18:00 PM&lt;/span&gt;&lt;br&gt;
+                Sunday: &lt;span&gt;10:00 AM-17:30 PM&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Header Services</title>
+      <identifier>header-services</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/header/icon-1.png}}" alt="Service" width="26" height="33" /&gt;Free Same-Day Delivery&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/header/icon-2.png}}" alt="Service" width="24" height="33" /&gt;Friendly Services&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/header/icon-3.png}}" alt="Service" width="23" height="33" /&gt;100% Secure Payment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/header/icon-4.png}}" alt="Service" width="22" height="33" /&gt;24/7 Help Center&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/header/icon-5.png}}" alt="Service" width="22" height="33" /&gt;30 Day Return&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Header Top Services</title>
+      <identifier>header-top-services</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul class="hd-top-services"&gt;
+    &lt;li&gt;&lt;a href="{{store url=""}}about-us"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="dropdown-block"&gt;
+        &lt;a href="#"&gt;Services&lt;/a&gt;
+        &lt;div class="dropdown-list"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Pet Training&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Trauma Treatment&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Vaccination&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Home Care&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Surgery&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="{{store url=""}}partner"&gt;Brands&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="{{store url=""}}blog"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="{{store url=""}}faqs"&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Footer Payment</title>
+      <identifier>footer-payment</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="footer-payment"&gt;
+&lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/footer/payment.png}}" alt="Payment" width="270" height="30" /&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Pages Dropdown</title>
+      <identifier>page-dropdown</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="featured-menu"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-lg-12"&gt;
+			&lt;div class="column-featured"&gt;
+				&lt;ul class="featured-items"&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}about-us"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}contact"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}checkout/cart"&gt;Shopping Cart&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}checkout"&gt;Checkout&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}customer/account"&gt;My Account&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}faqs"&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}partner"&gt;Partner&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}404page"&gt;404 Page&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}partner"&gt;Brands - Manufactures&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}"&gt;All Categories&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}best-sellers"&gt;Best Sellers&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}new-arrivals"&gt;New Arrivals&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="{{store url=""}}under-price"&gt;Under Price $400&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>BZOTech - Header - Contact - Tracking</title>
+      <identifier>header-contact-tracking</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul&gt;
+                            &lt;li class="help"&gt;&lt;a href="{{store url=""}}contact"&gt;Help &amp; Contact&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="tracking"&gt;&lt;a href="{{store url=""}}sales/guest/form"&gt;Order Tracking&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+  </blocks>
+</root>

@@ -1,0 +1,58 @@
+/**
+ * Buy
+ */
+
+& when (@media-common = true) {
+    .bzotech-buy {
+        position: fixed;
+        bottom: 53px;
+        left: 30px;
+        z-index: 999999;
+
+        a {
+            display: inline-block;
+            position: relative;
+            height: 46px;
+            line-height: 46px;
+            padding: 0 25px 0 61px;
+            background-color: #82b440;
+            color: #000;
+            font-size: 14px;
+            white-space: nowrap;
+            text-decoration: none;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            border-radius: 23px;
+            -webkit-border-radius: 23px;
+            transition: .1s;
+            -webkit-transition: .1s;
+
+            &:hover {
+                background-color: #5a49f8;
+                color: #fff;
+
+                img {
+                    -webkit-filter: brightness(0) invert(1);
+                    filter: brightness(0) invert(1);
+                    transition: .1s;
+                    -webkit-transition: .1s;
+                }
+            }
+        }
+
+        .bzo-buy-market {
+            display: inline-block;
+            line-height: 1;
+            position: absolute;
+            height: 30px;
+            top: 50%;
+            margin-top: -15px;
+            left: 22px;
+
+            img {
+                width: auto;
+                max-height: 30px;
+            }
+        }
+    }
+}

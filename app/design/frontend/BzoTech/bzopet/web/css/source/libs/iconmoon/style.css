@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1t3szc');
+  src:  url('fonts/icomoon.eot?1t3szc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1t3szc') format('truetype'),
+    url('fonts/icomoon.woff?1t3szc') format('woff'),
+    url('fonts/icomoon.svg?1t3szc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="bzo-"], [class*=" bzo-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bzo-arrow-down:before {
+  content: "\e900";
+}
+.bzo-arrow-left:before {
+  content: "\e901";
+}
+.bzo-arrow-right:before {
+  content: "\e902";
+}
+.bzo-arrow-up:before {
+  content: "\e903";
+}
+.bzo-check:before {
+  content: "\e904";
+}
+.bzo-chevron-down:before {
+  content: "\e905";
+}
+.bzo-chevron-left:before {
+  content: "\e906";
+}
+.bzo-chevron-right:before {
+  content: "\e907";
+}
+.bzo-chevron-up:before {
+  content: "\e908";
+}
+.bzo-edit:before {
+  content: "\e909";
+}
+.bzo-eye:before {
+  content: "\e90a";
+}
+.bzo-eye-off:before {
+  content: "\e90b";
+}
+.bzo-heart:before {
+  content: "\e90c";
+}

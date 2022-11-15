@@ -1,0 +1,75 @@
+<?php
+$mediaSrc = $_configCore->getMediaUrl();
+?>
+<div class="header-desktop">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="hd-top-support">
+                        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header-contact-tracking')->toHtml(); ?>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="header-services">
+                        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header-top-services')->toHtml(); ?>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="menu-container clearfix">
+                <div id="menu-desktop" class="header-megamenu" data-element-mobile="menu-mobile">
+                    <div data-mobile-content="content-mobile" class="content-mobile">
+                        <?php echo $this->getChildHtml("catalog.topnav"); ?>
+                    </div>
+                </div>
+
+                <div class="logo-container">
+                    <?php echo $this->getChildHtml("logo"); ?>
+                </div>
+
+                <div class="customer-wrapper">
+                    <div class="r-content">
+                        <?php echo $this->getChildHtml("store_language"); ?>
+                        <?php echo $this->getChildHtml("currency"); ?>
+
+                        <div class="search-header">
+                            <div id="search-desktop" data-element-mobile="search-mobile">
+                                <div data-mobile-content="content-mobile" class="content-mobile">
+                                    <?php echo $this->getChildHtml("topSearch"); ?>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-links">
+                            <div id="desktop-customer-links" class="cus-links">
+                                <?php echo $this->getChildHtml("header.links"); ?>
+                            </div>
+                        </div>
+
+                        <?php echo $this->getChildHtml("wishlist_header"); ?>
+
+                        <div id="cart-desktop" class="hd-cart" data-element-mobile="cart-mobile">
+                            <div data-mobile-content="content-mobile" class="content-mobile">
+                                <?php echo $this->getChildHtml("minicart"); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-services">
+        <div class="container">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header-services')->toHtml(); ?>
+        </div>
+    </div>
+</div>
+
