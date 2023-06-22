@@ -1,0 +1,1008 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_item>
+      <title>404 Not Found</title>
+      <identifier>no-route</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="notfound-container"&gt;
+    &lt;div class="image-notfound"&gt;
+        &lt;img src="{{media url=wysiwyg/notfound/notfound.jpg}}" alt="404 Not Found" width="880" height="510" /&gt;
+    &lt;/div&gt;
+
+    &lt;div class="notfound-info"&gt;
+        &lt;div class="title google-element-font"&gt;Oop, That Link Is Broken.&lt;/div&gt;
+        &lt;div class="description"&gt;
+            Page doesn’t exist or some other error occured. Go to our
+            Previous page or go back to Home page
+        &lt;/div&gt;
+
+        &lt;div class="notfound-action"&gt;
+            &lt;a class="go-back" href="javascript:void(0)" onclick="history.go(-1); return false;"&gt;Go Back&lt;/a&gt;
+            &lt;a class="go-home" href="{{store url=""}}"&gt;Home Page&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Home Demo 1</title>
+      <identifier>home-demo-1</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="slideshow-home slidershow-nav-1 hover-show-nav mb-desktop-72 mb-mobile-20"&gt;
+    &lt;div class="owl-carousel owl-theme" data-mage-init='{"bzo_carousel":{"nav": true, "dots": false, "items": 1, "margin": 0, "loop": true, "autoplay": true, "autoplayHoverPause": true}}'&gt;
+        &lt;div class="item"&gt;
+            &lt;a href="#"&gt;
+                &lt;img src="{{media url=wysiwyg/slider/home-1/item-1.jpg}}" alt="Slidershow" width="1920" height="670" /&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class="item"&gt;
+            &lt;a href="#"&gt;
+                &lt;img src="{{media url=wysiwyg/slider/home-1/item-2.jpg}}" alt="Slidershow" width="1920" height="670" /&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="block block-cate-home nav-1 hover-show-nav hidden-block-title mb-desktop-55 mb-mobile-20"&gt;
+        &lt;div class="block-title title-center"&gt;
+            &lt;strong class="google-element-font"&gt;Shop By Category&lt;/strong&gt;
+        &lt;/div&gt;
+
+        &lt;div class="block-content"&gt;
+            {{widget type="BzoTech\Categories\Block\Widget\Slider" widget_style="slider" categories_title="Shop By Category" category_ids="288,289,290,291,292,294" display_parent_image="true" sub_limit="0" display_product_count="false" margin="30" autoplay="false" loop="true" nav="true" dots="false" mouse_drag="true" touch_drag="true" screen_0="2" screen_1="3" screen_2="3" screen_3="4" screen_4="5" screen_5="5" screen_6="5" screen_7="5"}}
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="block block-product-home product-item-shadow hidden-block-title nav-1 hover-show-nav mb-desktop-75 mb-mobile-30"&gt;
+        &lt;div class="block-title title-center"&gt;
+            &lt;strong class="google-element-font"&gt;Best Selling&lt;/strong&gt;
+        &lt;/div&gt;
+
+        {{widget type="BzoTech\WidgetProducts\Block\Widget\Slider" widget_style="slider" widget_grid_title="Best Selling" product_source="lastest_products" select_category="243" product_order_by="DESC" countdown_timer="0" product_limitation="6" margin="30" autoplay="false" loop="false" nav="true" dots="false" mouse_drag="true" touch_drag="true" screen_0="2" screen_1="2" screen_2="3" screen_3="4" screen_4="4" screen_5="4" screen_6="4" screen_7="4"}}
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="row mb-desktop-60 mb-mobile-20"&gt;
+        &lt;div class="col-lg-6 col-sm-6"&gt;
+            &lt;div class="banner-image"&gt;
+                &lt;a href="#"&gt;
+                    &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/banner/banner-1.jpg}}" alt="Banner" width="630" height="357" /&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col-lg-6 col-sm-6"&gt;
+            &lt;div class="banner-image"&gt;
+                &lt;a href="#"&gt;
+                    &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/banner/banner-2.jpg}}" alt="Banner" width="630" height="357" /&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="full-tabs pt-desktop-70 pb-desktop-60 pt-mobile-20 pb-mobile-30 mb-desktop-70 mb-mobile-20"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="block block-tab-home product-item-shadow hidden-block-title nav-1 hover-show-nav"&gt;
+            &lt;div class="block-title"&gt;
+                &lt;strong class="google-element-font"&gt;Featured Products&lt;/strong&gt;
+                &lt;a href="{{store url=""}}features.html"&gt;View All&lt;/a&gt;
+            &lt;/div&gt;
+
+            {{block class="BzoTech\ProductTabs\Block\ProductTabs" template="BzoTech_ProductTabs::default.phtml" title="New Arrivals" type_show="slider" type_listing="all" display_countdown="0" type_filter="categories" category_tabs="250,288,289,290,291,292,294" order_dir="DESC" limitation="6" margin="30" autoplay="0" loop="0" nav="1" dots="0" mousedrag="1" touchdrag="1" screen_0="2" screen_1="2" screen_2="3" screen_3="4" screen_4="3" screen_5="3" screen_6="3" screen_7="3"}}
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="block block-product-list nav-1 hover-show-nav hidden-block-title mb-desktop-85 mb-mobile-35"&gt;
+        &lt;div class="block-title"&gt;
+            &lt;strong class="google-element-font"&gt;New Arrivals&lt;/strong&gt;
+            &lt;a href="{{store url=""}}new-arrivals"&gt;View All&lt;/a&gt;
+        &lt;/div&gt;
+
+        {{widget type="BzoTech\WidgetProducts\Block\Widget\SliderList" widget_style="slider_list" widget_grid_title="Top Rating" product_source="lastest_products" select_category="243" product_order_by="DESC" countdown_timer="0" product_limitation="6" product_row="2" margin="30" autoplay="false" loop="false" nav="true" dots="false" mouse_drag="true" touch_drag="true" screen_0="1" screen_1="1" screen_2="2" screen_3="2" screen_4="3" screen_5="3" screen_6="3" screen_7="3"}}
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="home-email-phone google-element-font mb-desktop-70 mb-mobile-20"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-5"&gt;
+                &lt;div class="item"&gt;
+                    &lt;div class="title"&gt;Phone&lt;/div&gt;
+                    &lt;div class="value"&gt;&lt;a href="tel:(+084) 859 481 3614"&gt;(+084) 859 481 3614&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-lg-2"&gt;
+                &lt;div class="pet-support"&gt;&lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/banner/pet-support.png}}" alt="Support" width="70" height="70" /&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-lg-5"&gt;
+                &lt;div class="item"&gt;
+                    &lt;div class="title"&gt;Email&lt;/div&gt;
+                    &lt;div class="value"&gt;&lt;a href="mailto:bzopets@support.com"&gt;bzopets@support.com&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="block block-home-services mb-desktop-60 mb-mobile-10"&gt;
+        &lt;div class="block-title"&gt;
+            &lt;strong class="google-element-font"&gt;Our Services&lt;/strong&gt;
+            &lt;a href="{{store url=""}}contact"&gt;Make An Appointment&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class="block-content"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;div class="item"&gt;
+                        &lt;div class="services-icon"&gt;
+                            &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/icons/icon-1.png}}" alt="Service" width="56" height="59" /&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="service-info"&gt;
+                            &lt;h3 class="google-element-font"&gt;&lt;a href="#"&gt;Pet Training&lt;/a&gt;&lt;/h3&gt;
+                            &lt;p&gt;Lorem simply dummy text of the printing typesetting industry the industry&lt;/p&gt;
+                            &lt;div class="read-more"&gt;&lt;a href="#"&gt;Read More&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;div class="item"&gt;
+                        &lt;div class="services-icon"&gt;
+                            &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/icons/icon-2.png}}" alt="Service" width="57" height="59" /&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="service-info"&gt;
+                            &lt;h3 class="google-element-font"&gt;&lt;a href="#"&gt;Trauma Treatment&lt;/a&gt;&lt;/h3&gt;
+                            &lt;p&gt;At veiro eos et accusamus  iuiste odiai simply dummy text of the printing&lt;/p&gt;
+                            &lt;div class="read-more"&gt;&lt;a href="#"&gt;Read More&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;div class="item"&gt;
+                        &lt;div class="services-icon"&gt;
+                            &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/icons/icon-3.png}}" alt="Service" width="56" height="59" /&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="service-info"&gt;
+                            &lt;h3 class="google-element-font"&gt;&lt;a href="#"&gt;Vaccination&lt;/a&gt;&lt;/h3&gt;
+                            &lt;p&gt;Sed perspicatis und omnis natus arn sit of the printed standard dummy&lt;/p&gt;
+                            &lt;div class="read-more"&gt;&lt;a href="#"&gt;Read More&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;div class="item"&gt;
+                        &lt;div class="services-icon"&gt;
+                            &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/icons/icon-4.png}}" alt="Service" width="50" height="59" /&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="service-info"&gt;
+                            &lt;h3 class="google-element-font"&gt;&lt;a href="#"&gt;Home Care&lt;/a&gt;&lt;/h3&gt;
+                            &lt;p&gt;Tempor incididunt ulabore et dolor magna astandard dummy text ever&lt;/p&gt;
+                            &lt;div class="read-more"&gt;&lt;a href="#"&gt;Read More&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;div class="item"&gt;
+                        &lt;div class="services-icon"&gt;
+                            &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/icons/icon-5.png}}" alt="Service" width="60" height="59" /&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="service-info"&gt;
+                            &lt;h3 class="google-element-font"&gt;&lt;a href="#"&gt;Surgery&lt;/a&gt;&lt;/h3&gt;
+                            &lt;p&gt;Therefore always holds an these matters to standard dummy printer took&lt;/p&gt;
+                            &lt;div class="read-more"&gt;&lt;a href="#"&gt;Read More&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="why-choose pt-desktop-70 pb-desktop-52 pt-mobile-30 pb-mobile-10 mb-desktop-70 mb-mobile-20"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="block block-home-choose"&gt;
+            &lt;div class="block-title"&gt;
+                &lt;strong class="google-element-font"&gt;Why Choose Us?&lt;/strong&gt;
+            &lt;/div&gt;
+
+            &lt;div class="block-content"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;h3 class="google-element-font"&gt;Quick Response&lt;/h3&gt;
+                        &lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.since when an unknown printer&lt;/p&gt;
+                    &lt;/li&gt;
+
+                    &lt;li&gt;
+                        &lt;h3 class="google-element-font"&gt;Experienced&lt;/h3&gt;
+                        &lt;p&gt;We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment blinded&lt;/p&gt;
+                    &lt;/li&gt;
+
+                    &lt;li&gt;
+                        &lt;h3 class="google-element-font"&gt;Flexible Payment&lt;/h3&gt;
+                        &lt;p&gt;Accusamus et iusto odio dignissimos ducimusa blanditiis praesentium voluptatum deleno atque corrupti quos dolores quas molestias except occaecati&lt;/p&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="block block-home-partner mb-desktop-40 mb-mobile-0"&gt;
+        &lt;div class="block-title"&gt;
+            &lt;strong class="google-element-font"&gt;Our Partners&lt;/strong&gt;
+            &lt;a href="#"&gt;View All&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class="block-content"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-1.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-2.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-3.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-4.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-5.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-6.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-7.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-8.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-9.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="lazyload" src="{{media url=lazyloading/blank.png}}" data-src="{{media url=wysiwyg/home-partner/partner-10.jpg}}" alt="Banner" width="232" height="98" /&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="block block-post-home hidden-block-title nav-1 hover-show-nav mb-desktop-75 mb-mobile-30"&gt;
+        &lt;div class="block-title title-center"&gt;
+            &lt;strong class="google-element-font"&gt;Our Blogs&lt;/strong&gt;
+        &lt;/div&gt;
+
+        &lt;div data-owl="owl-slider" data-autoplay="false" data-nav="true" data-dots="false" data-screen0="1" data-screen481="2" data-screen768="2" data-screen992="3" data-screen1200="3" data-screen1441="3" data-screen1681="3" data-screen1920="3" data-margin="30" data-autoplayhoverpause="true" data-loop="false" data-center="false" data-stagepadding="0" data-mousedrag="true" data-touchdrag="true"&gt;
+            {{widget type="Magefan\Blog\Block\Widget\Recent" title="Popular Articles" no_repeat_posts_enable="0" category_id="5" tag_id="0" author_id="0"}}
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[<!--
+    <referenceContainer name="right">
+        <referenceBlock name="catalog.compare.sidebar" remove="true" />
+    </referenceContainer>-->]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>About Us</title>
+      <identifier>about-us</identifier>
+      <content_heading>About Us</content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="container" style="padding: 0; width: 100%; padding: 0 15px;"&gt;
+    &lt;div class="about-container"&gt;
+        &lt;div class="row mb-desktop-40 mb-mobile-0"&gt;
+            &lt;div class="col-lg-6"&gt;
+                &lt;div class="about-content mb-desktop-30"&gt;
+                    &lt;div class="about-title google-element-font"&gt;Hello, With 25+ Years Of Experience&lt;/div&gt;
+
+                    &lt;p&gt;Simply dummy text the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                        to make
+                        a type specimen book.&lt;/p&gt;
+
+                    &lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots piece classical
+                        Latin
+                        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                        Hampden-Sydney College in Virginia, looked up one of the more.&lt;/p&gt;
+
+                    &lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots piece classical
+                        Latin
+                        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                        Hampden-Sydney College in Virginia, looked up one of the more.&lt;/p&gt;
+
+                    &lt;div class="row"&gt;
+                        &lt;div class="col-lg-6"&gt;
+                            &lt;div class="sub-title google-element-font"&gt;Our Vision&lt;/div&gt;
+                            &lt;p&gt;Lorem simply dummy text the arm printing typesetting industry the industry standard dummy
+                                ever
+                                since the unknown printer a took galley of type and scrambled&lt;/p&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-lg-6"&gt;
+                            &lt;div class="sub-title google-element-font"&gt;Our Mission&lt;/div&gt;
+                            &lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of
+                                a page
+                                when looking at its layout. The point of using suffered alterationmore&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-lg-6"&gt;
+                &lt;div class="about-image mb-desktop-30"&gt;
+                    &lt;img src="{{media url=wysiwyg/about-contact/about-1.jpg}}" alt="About Us" width="607"
+                         height="514"/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row change-block mb-desktop-40 mb-mobile-0"&gt;
+            &lt;div class="col-lg-6 change"&gt;
+                &lt;div class="about-content mb-desktop-30"&gt;
+                    &lt;div class="about-title google-element-font"&gt;We Are Proud To Provide The Best Service For
+                        Customers
+                    &lt;/div&gt;
+
+                    &lt;p&gt;consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis
+                        aute
+                        irure dolor in reprehenderit in voluptate velit.&lt;/p&gt;
+
+                    &lt;div class="sub-title google-element-font"&gt;Our History&lt;/div&gt;
+
+                    &lt;p&gt;We must explain to you how all this mistaken idea of denouncing pleasure and praising paint was
+                        born and
+                        I will give you acomplete account of the system, and expound actual teachings of the great
+                        explorer of
+                        the truth, the master-builder of human happiness.&lt;/p&gt;
+
+                    &lt;div class="sub-title google-element-font"&gt;Operations&lt;/div&gt;
+
+                    &lt;p&gt;Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                        corrupti
+                        quos dolores et quasa molestias excepturi sint occaecati cupiditate provident, similique sunt in
+                        culpa
+                        qui officia deserunt mollitia animi,&lt;/p&gt;
+
+
+                    &lt;div class="sig-about"&gt;
+                        &lt;div class="sig"&gt;&lt;img src="{{media url=wysiwyg/about-contact/sig.png}}"
+                                              alt="About Us" width="147"
+                                              height="60"/&gt;&lt;/div&gt;
+                        &lt;strong class="google-element-font"&gt;James Smith&lt;/strong&gt; / Ceo
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-lg-6"&gt;
+                &lt;div class="about-image mb-desktop-30 mb-mobile-0"&gt;
+                    &lt;img src="{{media url=wysiwyg/about-contact/about-2.jpg}}" alt="About Us" width="595"
+                         height="660"/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="about-full pt-desktop-90 pb-desktop-90 pt-mobile-30 pb-mobile-30"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-6"&gt;
+                &lt;div class="about-title google-element-font"&gt;Frequently Asked Questions&lt;/div&gt;
+
+                &lt;div class="accordion about-accordion" id="accordionGeneral"&gt;
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title google-element-font" data-toggle="collapse"
+                                 data-target="#accordion-1"
+                                 aria-expanded="true"&gt;
+                                What Shipping Methods Are Available?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-1" class="collapse show" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;On the other hand, we are denounce with righteous arm indignation and dislike mena
+                                    who are sonen beguiled and demoralized by the charms of pleasured of the moment,
+                                    blinded by arm desire, that they cannot foresee the pain trouble.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title google-element-font collapsed" data-toggle="collapse"
+                                 data-target="#accordion-2"&gt;
+                                Can Ink Or Other Stains Be Washed Off?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-2" class="collapse" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;On the other hand, we are denounce with righteous arm indignation and dislike mena
+                                    who are sonen beguiled and demoralized by the charms of pleasured of the moment,
+                                    blinded by arm desire, that they cannot foresee the pain trouble.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title google-element-font collapsed" data-toggle="collapse"
+                                 data-target="#accordion-3"&gt;
+                                How Long Will It Take To Get My Package?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-3" class="collapse" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;On the other hand, we are denounce with righteous arm indignation and dislike mena
+                                    who are sonen beguiled and demoralized by the charms of pleasured of the moment,
+                                    blinded by arm desire, that they cannot foresee the pain trouble.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title google-element-font collapsed" data-toggle="collapse"
+                                 data-target="#accordion-4"&gt;
+                                What Is The Difference Between Emulsions And Distempers?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-4" class="collapse" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;On the other hand, we are denounce with righteous arm indignation and dislike mena
+                                    who are sonen beguiled and demoralized by the charms of pleasured of the moment,
+                                    blinded by arm desire, that they cannot foresee the pain trouble.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title google-element-font collapsed" data-toggle="collapse"
+                                 data-target="#accordion-5"&gt;
+                                Can The Products Be Applied During Rainy Season?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-5" class="collapse" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;On the other hand, we are denounce with righteous arm indignation and dislike mena
+                                    who are sonen beguiled and demoralized by the charms of pleasured of the moment,
+                                    blinded by arm desire, that they cannot foresee the pain trouble.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-lg-6"&gt;
+                &lt;div class="about-image-r"&gt;
+                    &lt;img src="{{media url=wysiwyg/about-contact/about-3.jpg}}" alt="About Us" width="608"
+                         height="757"/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container" style="padding: 0 15px;"&gt;
+    &lt;div class="block team-about-us pt-desktop-70 pb-desktop-20 pt-mobile-30 pb-mobile-0"&gt;
+        &lt;div class="block-title title-center"&gt;
+            &lt;strong class="google-element-font"&gt;Our Team&lt;/strong&gt;
+        &lt;/div&gt;
+
+        &lt;div class="team-list"&gt;
+            &lt;div class="item"&gt;
+                &lt;div class="team-image"&gt;
+                    &lt;img src="{{media url=wysiwyg/about-contact/team-1.jpg}}" alt="About Us" width="190"
+                         height="190"/&gt;
+                &lt;/div&gt;
+
+                &lt;div class="team-info"&gt;
+                    &lt;div class="name google-element-font"&gt;Lusineh Tatev&lt;/div&gt;
+                    &lt;div class="job"&gt;Founder&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="item"&gt;
+                &lt;div class="team-image"&gt;
+                    &lt;img src="{{media url=wysiwyg/about-contact/team-2.jpg}}" alt="About Us" width="190"
+                         height="190"/&gt;
+                &lt;/div&gt;
+
+                &lt;div class="team-info"&gt;
+                    &lt;div class="name google-element-font"&gt;Anahit Narine&lt;/div&gt;
+                    &lt;div class="job"&gt;Assistent&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="item"&gt;
+                &lt;div class="team-image"&gt;
+                    &lt;img src="{{media url=wysiwyg/about-contact/team-3.jpg}}" alt="About Us" width="190"
+                         height="190"/&gt;
+                &lt;/div&gt;
+
+                &lt;div class="team-info"&gt;
+                    &lt;div class="name google-element-font"&gt;Gohar Arsen&lt;/div&gt;
+                    &lt;div class="job"&gt;Manager&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="item"&gt;
+                &lt;div class="team-image"&gt;
+                    &lt;img src="{{media url=wysiwyg/about-contact/team-4.jpg}}" alt="About Us" width="190"
+                         height="190"/&gt;
+                &lt;/div&gt;
+
+                &lt;div class="team-info"&gt;
+                    &lt;div class="name google-element-font"&gt;Rudolf Sevan&lt;/div&gt;
+                    &lt;div class="job"&gt;Pet Instructor&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="item"&gt;
+                &lt;div class="team-image"&gt;
+                    &lt;img src="{{media url=wysiwyg/about-contact/team-5.jpg}}" alt="About Us" width="190"
+                         height="190"/&gt;
+                &lt;/div&gt;
+
+                &lt;div class="team-info"&gt;
+                    &lt;div class="name google-element-font"&gt;Nare Mariam&lt;/div&gt;
+                    &lt;div class="job"&gt;Pet Instructor&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .page-main {
+        max-width: unset !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+&lt;/style&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Partner</title>
+      <identifier>partner</identifier>
+      <content_heading>Partner</content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="partner-container"&gt;
+    &lt;div class="partner-brand nav-1 mb-desktop-70"&gt;
+        &lt;div class="block-title title-center" style="margin-top: -20px"&gt;
+            &lt;strong class="google-element-font"&gt;Featured Brands&lt;/strong&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class="block-content"&gt;
+            &lt;div class="owl-carousel owl-theme"
+                 data-mage-init='{"bzo_carousel":{"nav": true, "dots": false, "margin": 30, "responsive":{"0":{"items": 1}, "481":{"items": 2}, "768":{"items": 2}, "992":{"items": 4}, "1200":{"items": 4}, "1441":{"items": 4}, "1681":{"items": 4}, "1921":{"items": 4}}}}'&gt;
+                &lt;div class="item"&gt;
+                    &lt;div class="item-inner"&gt;
+                        &lt;div class="image"&gt;
+                            &lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/partner-1.jpg}}" alt="Brand"
+                                             width="210" height="180"/&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="info"&gt;
+                            &lt;div class="name"&gt;&lt;a href="#"&gt;Dog &amp; Cat&lt;/a&gt;&lt;/div&gt;
+                            &lt;div class="description"&gt;
+                                Other haind denounces with righteous indignationa dislike men who beguiled and
+                                demoralized by the charms.
+                            &lt;/div&gt;
+                            &lt;div class="go-shop"&gt;&lt;a href="#"&gt;Go Shop&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="item"&gt;
+                    &lt;div class="item-inner"&gt;
+                        &lt;div class="image"&gt;
+                            &lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/partner-2.jpg}}" alt="Brand"
+                                             width="210" height="180"/&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="info"&gt;
+                            &lt;div class="name"&gt;&lt;a href="#"&gt;Pet Rawv&lt;/a&gt;&lt;/div&gt;
+                            &lt;div class="description"&gt;
+                                Vero accusamus iuston a dignissimos ducimus blanditiis praesentium volupe deleniti atque
+                                corrupti quos.
+                            &lt;/div&gt;
+                            &lt;div class="go-shop"&gt;&lt;a href="#"&gt;Go Shop&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="item"&gt;
+                    &lt;div class="item-inner"&gt;
+                        &lt;div class="image"&gt;
+                            &lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/partner-3.jpg}}" alt="Brand"
+                                             width="210" height="180"/&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="info"&gt;
+                            &lt;div class="name"&gt;&lt;a href="#"&gt;Dog Angel&lt;/a&gt;&lt;/div&gt;
+                            &lt;div class="description"&gt;
+                                Blinded by desire, that they an foresee the pain and trouble that are bound to ensue;
+                                and equal blame.
+                            &lt;/div&gt;
+                            &lt;div class="go-shop"&gt;&lt;a href="#"&gt;Go Shop&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="item"&gt;
+                    &lt;div class="item-inner"&gt;
+                        &lt;div class="image"&gt;
+                            &lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/partner-4.jpg}}" alt="Brand"
+                                             width="210" height="180"/&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="info"&gt;
+                            &lt;div class="name"&gt;&lt;a href="#"&gt;Pet Care&lt;/a&gt;&lt;/div&gt;
+                            &lt;div class="description"&gt;
+                                Great explorer of the truth, the master builder of human happiness. Rejects a dislikes,
+                                avoids pleasure itself.
+                            &lt;/div&gt;
+                            &lt;div class="go-shop"&gt;&lt;a href="#"&gt;Go Shop&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="item"&gt;
+                    &lt;div class="item-inner"&gt;
+                        &lt;div class="image"&gt;
+                            &lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/partner-2.jpg}}" alt="Brand"
+                                             width="210" height="180"/&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="info"&gt;
+                            &lt;div class="name"&gt;&lt;a href="#"&gt;Pet Rawv&lt;/a&gt;&lt;/div&gt;
+                            &lt;div class="description"&gt;
+                                Vero accusamus iuston a dignissimos ducimus blanditiis praesentium volupe deleniti atque
+                                corrupti quos.
+                            &lt;/div&gt;
+                            &lt;div class="go-shop"&gt;&lt;a href="#"&gt;Go Shop&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="brand-partner mb-desktop-40"&gt;
+        &lt;div class="block-title title-center"&gt;
+            &lt;strong class="google-element-font"&gt;Popular Brands&lt;/strong&gt;
+        &lt;/div&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-1.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-2.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-3.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-4.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-5.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-6.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-7.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-8.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-9.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-10.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-11.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-12.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-13.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-14.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="{{media url=wysiwyg/partner/brand-15.jpg}}" alt="Brand" width="232"
+                                 height="98"/&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class="block-post-home hidden-block-title nav-1 mb-desktop-45"&gt;
+        &lt;div class="block-title title-center"&gt;
+            &lt;strong class="google-element-font"&gt;Popular Articles&lt;/strong&gt;
+        &lt;/div&gt;
+
+        &lt;div data-owl="owl-slider" data-autoplay="false" data-nav="true" data-dots="false" data-screen0="1" data-screen481="2" data-screen768="2" data-screen992="3" data-screen1200="3" data-screen1441="3" data-screen1681="3" data-screen1920="3" data-margin="30" data-autoplayhoverpause="true" data-loop="false" data-center="false" data-stagepadding="0" data-mousedrag="true" data-touchdrag="true"&gt;
+            {{widget type="Magefan\Blog\Block\Widget\Recent" title="Popular Articles" no_repeat_posts_enable="0" category_id="5" tag_id="0" author_id="0"}}
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>FAQs</title>
+      <identifier>faqs</identifier>
+      <content_heading>FAQs</content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="faqs-container"&gt;
+    &lt;div class="faq-title google-element-font"&gt;Frequently Asked Questions&lt;/div&gt;
+    &lt;div class="faq-description mb-desktop-25"&gt;This Agreement was last modified on 18th february 2022&lt;/div&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="col-lg-6"&gt;
+            &lt;div class="list-faqs list-left mb-desktop-30"&gt;
+                &lt;div class="sub-title google-element-font"&gt;General Questions&lt;/div&gt;
+
+                &lt;div class="accordion" id="accordionGeneral"&gt;
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title" data-toggle="collapse" data-target="#accordion-1"
+                                 aria-expanded="true"&gt;
+                                What Shipping Methods Are Available?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-1" class="collapse show" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#accordion-2"&gt;
+                                How Long Should One Wait Before Painting In Case Of A New Construction?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-2" class="collapse" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#accordion-3"&gt;
+                                Can Ink Or Other Stains Be Washed Off?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-3" class="collapse" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#accordion-4"&gt;
+                                How Do The Stains On The Floor Be Removed After The Painting Is Over?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-4" class="collapse" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#accordion-5"&gt;
+                                What Is The Difference Between Emulsions And Distempers?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="accordion-5" class="collapse" data-parent="#accordionGeneral"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col-lg-6"&gt;
+            &lt;div class="list-faqs list-right mb-desktop-30"&gt;
+                &lt;div class="sub-title google-element-font"&gt;Other Questions&lt;/div&gt;
+
+                &lt;div class="accordion" id="accordionOther"&gt;
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#other-1"&gt;
+                                How Long Will It Take To Get My Package?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="other-1" class="collapse" data-parent="#accordionOther"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#other-2"&gt;
+                                Can The Products Be Applied During Rainy Season?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="other-2" class="collapse" data-parent="#accordionOther"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#other-3"&gt;
+                                How Do The Stains On The Floor Be Removed After The Painting Is Over?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="other-3" class="collapse" data-parent="#accordionOther"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#other-4"&gt;
+                                What Is The Expiry Date Of The Paints?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="other-4" class="collapse" data-parent="#accordionOther"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="accordion-item"&gt;
+                        &lt;div class="accordion-header"&gt;
+                            &lt;div class="accordion-title collapsed" data-toggle="collapse" data-target="#other-5"&gt;
+                                What Is The Difference Between Emulsions And Distempers?
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="other-5" class="collapse" data-parent="#accordionOther"&gt;
+                            &lt;div class="accordion-content"&gt;
+                                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorema laudantium, totam anaperiam, eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quian an voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>New Arrivals</title>
+      <identifier>new-arrivals</identifier>
+      <content_heading>New Arrivals</content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="page-tab-product hidden-block-title mb-desktop-30"&gt;
+    {{block class="BzoTech\ProductTabs\Block\ProductTabs" template="BzoTech_ProductTabs::default.phtml" title="New Arrivals" type_show="loadmore" type_listing="all" display_countdown="0" type_filter="categories" category_tabs="248,248,250,251,288,289" order_dir="DESC" order_by="created_at" limitation="10"}}
+&lt;/div&gt;
+</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Best Sellers</title>
+      <identifier>best-sellers</identifier>
+      <content_heading>Best Sellers</content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="page-tab-product hidden-block-title mb-desktop-30"&gt;
+    {{block class="BzoTech\ProductTabs\Block\ProductTabs" template="BzoTech_ProductTabs::default.phtml" title="Best Sellers" type_show="loadmore" type_listing="all" display_countdown="0" type_filter="categories" category_tabs="248,248,250,251,288,289" order_dir="DESC" order_by="ordered_qty" limitation="10"}}
+&lt;/div&gt;
+</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Under Price $400</title>
+      <identifier>under-price</identifier>
+      <content_heading>Under Price $400</content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="page-tab-product hidden-block-title mb-desktop-30"&gt;
+    {{block class="BzoTech\ProductTabs\Block\ProductTabs" template="BzoTech_ProductTabs::default.phtml" title="Under Price $400" type_show="loadmore" type_listing="under" under_price="400" display_countdown="0" type_filter="categories" category_tabs="248,248,250,251,288,289" order_dir="DESC" order_by="ordered_qty" limitation="10"}}
+&lt;/div&gt;
+</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+  </pages>
+</root>

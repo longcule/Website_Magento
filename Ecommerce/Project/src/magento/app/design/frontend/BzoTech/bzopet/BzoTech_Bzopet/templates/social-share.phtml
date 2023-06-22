@@ -1,0 +1,45 @@
+<?php
+$urlInterface = \Magento\Framework\App\ObjectManager::getInstance()->get('Magento\Framework\UrlInterface');
+$_product     = $block->getProduct();
+$currentUrl   = $urlInterface->getCurrentUrl();
+?>
+
+<div class="social-container">
+    <div class="social-title"><?php echo __('Share on: ') ?></div>
+
+    <div class="social-list">
+        <ul>
+            <li class="share-facebook">
+                <a href="#" target="_blank" rel="nofollow"
+                   onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+'<?php echo $currentUrl ?>&amp;picture=');return false;"
+                   title="<?php echo __('Share on Facebook') ?>">
+                    <span><?php echo __('Share on Facebook') ?></span>
+                </a>
+            </li>
+
+            <li class="share-twitter">
+                <a href="#" target="_blank" rel="nofollow"
+                   onclick="window.open('https://twitter.com/share?text=<?php echo $escaper->escapeHtml($_product->getName()) ?>&amp;url=<?php echo $currentUrl ?>');return false;"
+                   title="<?php echo __('Share on Twitter') ?>">
+                    <span><?php echo __('Share on Twitter') ?></span>
+                </a>
+            </li>
+
+            <li class="share-pinterest">
+                <a href="#" target="_blank" rel="nofollow"
+                   onclick="window.open('https://pinterest.com/pin/create/button/?url=<?php echo $currentUrl ?>');return false;"
+                   title="<?php echo __('Share on Pinterest') ?>">
+                    <span><?php echo __('Share on Pinterest') ?></span>
+                </a>
+            </li>
+
+            <li class="share-linkedin">
+                <a href="#" target="_blank" rel="nofollow"
+                   onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $currentUrl ?>');return false;"
+                   title="<?php echo __('Share on Linkedin') ?>">
+                    <span><?php echo __('Share on Linkedin') ?></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

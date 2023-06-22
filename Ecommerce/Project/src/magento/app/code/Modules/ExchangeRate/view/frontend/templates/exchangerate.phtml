@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<?php
+/**
+ * @var \Modules\ExchangeRate\Block\ExchangeRateBlock $block
+ */
+?>
+
+<?php
+$arrContextOptions=array(
+    "ssl"=>array(
+        "verify_peer"=>false,
+        "verify_peer_name"=>false,
+    ),
+);
+
+$url = "https://www.vietcombank.com.vn/exchangerates/ExrateXML.aspx";
+$xml = file_get_contents($url,false, stream_context_create($arrContextOptions));
+$new = simplexml_load_string($xml);
+$con = json_encode($new);
+$data = json_decode($con, true);
+
+?>
+
+<h3 class="text-center">Bảng quy đổi tiền tệ Vietcombank <?= $data['DateTime'] ?></h3>
+<table class="table">
+    <thead>
+    <tr style="border: 1px solid #000000">
+        <th scope="col" style="border: 1px solid #000000"><h5>STT</h5></th>
+        <th scope="col" style="border: 1px solid #000000"><h5>Tên ngoại tệ</h5></th>
+        <th scope="col" style="border: 1px solid #000000"><h5>Mã ngoại tệ</h5></th>
+        <th scope="col" style="border: 1px solid #000000"><h5>Mua tiền mặt</h5></th>
+        <th scope="col" style="border: 1px solid #000000"><h5>Mua chuyển khoản</h5></th>
+        <th scope="col" style="border: 1px solid #000000"><h5>Bán</h5></th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($data['Exrate'] as $k => $currency): ?>
+    <tr>
+        <th scope="row" style="border: 1px solid #000000"><h5><?= $k+1 ?></h5></th>
+        <td style="border: 1px solid #000000"><h5><?= $currency['@attributes']['CurrencyName'] ?></h5></td>
+        <td style="border: 1px solid #000000"><h5><?= $currency['@attributes']['CurrencyCode'] ?></h5></td>
+        <td style="border: 1px solid #000000"><h5><?= $currency['@attributes']['Buy'] ?></h5></td>
+        <td style="border: 1px solid #000000"><h5><?= $currency['@attributes']['Transfer'] ?></h5></td>
+        <td style="border: 1px solid #000000"><h5><?= $currency['@attributes']['Sell'] ?></h5></td>
+    </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+
